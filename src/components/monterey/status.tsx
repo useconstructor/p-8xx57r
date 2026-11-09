@@ -13,13 +13,13 @@ export function SessionStatus({ localDrafts, onUseServer, onReapply, onRecovered
   onRecovered?: (newIntent: boolean) => void;
 }) {
   const s = useSession();
-  if (s.state === "blocked") return <div className="recovery-panel" role="alert">
+  if (s.state === "blocked") return <div className="recovery-panel" role="alert" aria-busy={s.busy}>
     <h3><AlertCircle aria-hidden="true" />No podemos acceder a tu sesión</h3>
-    <p>{s.problem?.message ?? "Reintenta el acceso para consultar tu pedido."}</p>
+    <p>{s.busy ? "Intentando recuperar el acceso a tu sesión…" : s.problem?.message ?? "Reintenta el acceso para consultar tu pedido."}</p>
     <div className="recovery-actions">
-      <Button onClick={() => void s.initialize()}><RotateCcw aria-hidden="true" />Reintentar acceso</Button>
-      <Button variant="outline" onClick={() => void s.initialize(true)}>Crear una sesión nueva</Button>
-      {s.embedded && <a className="button-link outline" href="/pedido" target="_blank" rel="noopener">Abrir acceso directo</a>}
+      <Button disabled={s.busy} onClick={() => void s.initialize()}><RotateCcw aria-hidden="true" />Reintentar acceso</Button>
+      <Button variant="outline" disabled={s.busy} onClick={() => void s.initialize(true)}>Crear una sesión nueva</Button>
+      <a className="button-link outline" href="/pedido" target="_blank" rel="noopener">Abrir acceso directo</a>
     </div>
     <p className="small-note">Una sesión nueva o el acceso directo no recuperan el historial perdido ni el de otra vista.</p>
   </div>;

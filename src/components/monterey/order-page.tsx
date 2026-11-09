@@ -316,7 +316,7 @@ export function OrderPage() {
         <div className="order-total"><span>{stale && !frozen ? "Último total válido" : "Total"}</span><p>{total === undefined ? "—" : money(total)} <span>MXN</span></p></div>
         {!recovery && <SessionStatus />}
         {summary && Object.keys(errors).length > 0 && !frozen && <div className="validation-summary" role="alert"><h3>Revisa tu pedido</h3><ul>{Object.entries(errors).map(([id, error]) => <li key={id}><a href={id === "lines" ? "#secondary-catalogue" : `#quantity-${id}`} onClick={event => { event.preventDefault(); requestFocus(id); }}>{id === "lines" ? error : `${lines.find(line => line.productId === id)?.name ?? "Cantidad"}: ${error}`}</a></li>)}</ul></div>}
-        {!frozen && <Button type="submit" data-confirm variant={!lines.length || recovery ? "outline" : "default"} className="confirm-button" disabled={busy || s.state !== "ready" || recovery}>{busy ? "Guardando…" : "Confirmar pedido de ejemplo"}<Check aria-hidden="true" /></Button>}
+        {!frozen && <Button type="submit" data-confirm variant={!lines.length || recovery ? "outline" : "default"} className="confirm-button" disabled={busy || s.state !== "ready" || recovery}>{busy && s.state === "ready" ? "Guardando…" : "Confirmar pedido de ejemplo"}<Check aria-hidden="true" /></Button>}
         <p className="no-fulfillment">No se realizará ningún cobro, preparación ni envío.</p>
         {!frozen && !recovery && <p className="edge-note">Puedes revisar las cantidades antes de confirmar.</p>}
       </aside>
