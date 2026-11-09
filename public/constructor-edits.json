@@ -1,10 +1,5 @@
 {
   "version": 1,
-  "canvas": {
-    "hidden": [],
-    "frames": false,
-    "compact": true
-  },
   "edits": [
     {
       "path": "/",
