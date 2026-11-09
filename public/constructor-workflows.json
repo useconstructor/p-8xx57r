@@ -1,8 +1,29 @@
 {
   "version": 1,
   "workflows": [
-    { "id": "consultar_menu", "name": "Consultar menú", "description": "Consulta pública de los ocho productos de ejemplo.", "endpoint": "/api/menu", "method": "GET", "input": {} },
-    { "id": "consultar_carrito", "name": "Consultar carrito", "description": "Consulta el pedido de la sesión autorizada.", "endpoint": "/api/cart", "method": "GET", "input": {} },
-    { "id": "consultar_pedidos", "name": "Consultar pedidos", "description": "Consulta los pedidos guardados de la sesión autorizada.", "endpoint": "/api/orders", "method": "GET", "input": {} }
+    {
+      "id": "consultar_menu",
+      "name": "Consultar menú",
+      "description": "Consulta pública de los ocho productos de ejemplo. QA qa/platform-smoke-1794186785179",
+      "endpoint": "/api/menu",
+      "method": "GET",
+      "input": {}
+    },
+    {
+      "id": "consultar_carrito",
+      "name": "Consultar carrito",
+      "description": "Consulta el pedido de la sesión autorizada.",
+      "endpoint": "/api/cart",
+      "method": "GET",
+      "input": {}
+    },
+    {
+      "id": "consultar_pedidos",
+      "name": "Consultar pedidos",
+      "description": "Consulta los pedidos guardados de la sesión autorizada.",
+      "endpoint": "/api/orders",
+      "method": "GET",
+      "input": {}
+    }
   ]
 }
