@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "tables": {
+    "carrito_lineas": {
+      "columns": [
+        "cart_id",
+        "product_id",
+        "quantity"
+      ],
+      "hidden": [],
+      "pageSize": 26
+    }
+  }
+}
