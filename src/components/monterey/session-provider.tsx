@@ -91,22 +91,27 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     setUnknown(value);
   }, []);
 
-  const initialize = useCallback((createNew = false) => {
+  const initialize = useCallback((createNew = false, automatic = false) => {
     if (initializer.current) return initializer.current;
     const work = async () => {
-      setState("loading");
+      busyRef.current = true;
+      setBusy(true);
+      setState(previous => previous === "blocked" ? previous : "loading");
       setProblem(null);
       const scope = expectationScope();
       setEmbedded(scope.embedded);
+      let lockEntered = false;
+      let coordinationDenied = false;
+      let recoveryAttempted = false;
       try {
-        if (!navigator.locks?.request) throw new Error("LOCKS_UNAVAILABLE");
-        await navigator.locks.request("tm-session-init", async () => {
+        const coordinated = async () => {
+          lockEntered = true;
           let authorized: Context;
           try {
             authorized = await api<Context>("/api/cart");
           } catch (error) {
             if (!(error instanceof ApiError) || error.status !== 401) throw error;
-            if (!createNew && (scope.ambiguous || markerExists(scope.key) || markerExists("tm-session-expected") || Boolean(contextRef.current))) throw new Error("EXPECTED_SESSION_LOST");
+            if (!createNew && (!automatic || scope.ambiguous || markerExists(scope.key) || markerExists("tm-session-expected") || Boolean(contextRef.current))) throw new Error("EXPECTED_SESSION_LOST");
             await api<Context>("/api/session", {});
             // The lock covers the authorized probe as well as initialization.
             authorized = await api<Context>("/api/cart");
@@ -115,10 +120,36 @@ export function SessionProvider({ children }: { children: ReactNode }) {
           if (dirtyRef.current && contextRef.current && (authorized.cart.id !== contextRef.current.cart.id || authorized.cart.version !== contextRef.current.cart.version)) conflictWith(authorized);
           else apply(authorized);
           setState("ready");
-        });
+        };
+        try {
+          if (!navigator.locks?.request) {
+            coordinationDenied = true;
+            throw new Error("LOCKS_UNAVAILABLE");
+          }
+          await navigator.locks.request("tm-session-init", coordinated);
+        } catch (error) {
+          // Only a native permission denial with Web Locks present before entry
+          // permits this explicit attempt. Missing locks and callback failures do not.
+          const nativePermissionDenied = !lockEntered && Boolean(navigator.locks?.request) && error instanceof DOMException && error.name === "SecurityError";
+          coordinationDenied ||= nativePermissionDenied;
+          if (!createNew || !nativePermissionDenied) throw error;
+          recoveryAttempted = true;
+          await api<Context>("/api/session", {});
+          // A POST response is not evidence that the browser accepted its cookie.
+          await api<Context>("/api/cart");
+          // Even an isolated authorized read cannot make uncoordinated writes safe.
+          throw new Error("LOCKS_UNAVAILABLE");
+        }
       } catch (error) {
         setState("blocked");
-        setProblem({ code: "SESSION_BLOCKED", message: error instanceof Error && error.message === "LOCKS_UNAVAILABLE" ? "Este navegador no permite coordinar el acceso entre vistas. Prueba el acceso directo en un navegador compatible." : "No podemos acceder a tu sesión. Reintenta el acceso o crea una sesión nueva; una sesión nueva no recupera el historial anterior." });
+        setProblem({ code: "SESSION_BLOCKED", message: recoveryAttempted && error instanceof ApiError && error.status === 401
+          ? "La sesión no quedó accesible: el navegador sigue bloqueando la cookie de sesión. Habilita los permisos del sitio o prueba el acceso directo."
+          : coordinationDenied
+            ? "Este navegador no permite coordinar el acceso entre vistas. No podemos habilitar tu pedido con seguridad. Habilita los permisos del sitio o prueba el acceso directo en un navegador compatible."
+            : "No podemos acceder a tu sesión. Reintenta el acceso o crea una sesión nueva; una sesión nueva no recupera el historial anterior." });
+      } finally {
+        busyRef.current = false;
+        setBusy(false);
       }
     };
     initializer.current = work().finally(() => { initializer.current = null; });
@@ -148,7 +179,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     // Hydrate only the recovery envelope from browser storage, not order data.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setUnknown(saved);
-    void initialize();
+    void initialize(false, true);
     try {
       channel.current = new BroadcastChannel("tm-cart-updated");
       channel.current.onmessage = () => void refresh();
@@ -159,7 +190,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   }, [initialize, refresh]);
 
   const send = useCallback(async (operation: Operation, replay = false): Promise<Context | null> => {
-    if (busyRef.current) return null;
+    if (busyRef.current || state !== "ready") return null;
     busyRef.current = true;
     setBusy(true);
     setNotice("");
@@ -222,7 +253,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
       busyRef.current = false;
       setBusy(false);
     }
-  }, [apply, conflictWith, preserve]);
+  }, [apply, conflictWith, preserve, state]);
 
   const mutate = useCallback(async (endpoint: string, fields: Partial<Operation["payload"]> = {}) => {
     const current = contextRef.current;
