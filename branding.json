@@ -1,7 +1,15 @@
 {
-  "tone": "playful",
+  "primaryColor": "#0f766e",
+  "secondaryColor": "#FFD447",
+  "backgroundColor": "#FFFFFF",
+  "textColor": "#302044",
+  "accentColor": "#C6372D",
+  "fontHeading": "Bricolage Grotesque",
   "fontBody": "Atkinson Hyperlegible",
+  "borderRadius": "0.75rem",
   "logoText": "Taquería Monterey",
+  "tone": "playful",
+  "logoImageUrl": null,
   "brandbook": {
     "motif": "Media tortilla geométrica original: arco semicircular y borde recto. Su lógica conecta el cartel maíz con una franja uva de lado a lado y después con el borde de trabajo de la comanda, sin adornos que tapen productos ni controles.",
     "pages": [
@@ -972,13 +980,5 @@
     "positioning": "Propuesta de identidad original para la demo ficticia de Esteban en Constructor. Un menú breve de tacos y bebidas permite explorar productos ilustrados y guardar pedidos de ejemplo, sin representar un restaurante operativo.",
     "researchStatus": "not_found",
     "tokenSemanticsVersion": 1
-  },
-  "textColor": "#302044",
-  "accentColor": "#C6372D",
-  "fontHeading": "Bricolage Grotesque",
-  "borderRadius": "0.75rem",
-  "logoImageUrl": null,
-  "primaryColor": "#C6372D",
-  "secondaryColor": "#FFD447",
-  "backgroundColor": "#FFFFFF"
+  }
 }

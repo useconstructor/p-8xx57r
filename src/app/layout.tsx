@@ -42,6 +42,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <SessionProvider><Header />{children}<Footer /></SessionProvider>
       <script src={"https://constructor-api-git-dev-useconstructor.vercel.app/v1/projects/P-8XX57R/analytics/script.js"} defer></script>
       <script src="/constructor-editor.js" defer />
-    </body>
+    <script src="/constructor-brand-identity.js" defer></script></body>
   </html>;
 }
