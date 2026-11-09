@@ -128,10 +128,11 @@ export function SessionProvider({ children }: { children: ReactNode }) {
           }
           await navigator.locks.request("tm-session-init", coordinated);
         } catch (error) {
-          // Only an unavailable lock or a native permission denial before entry
-          // permits this explicit attempt. Network/callback failures do not.
-          coordinationDenied ||= !lockEntered && error instanceof DOMException && error.name === "SecurityError";
-          if (!createNew || !coordinationDenied) throw error;
+          // Only a native permission denial with Web Locks present before entry
+          // permits this explicit attempt. Missing locks and callback failures do not.
+          const nativePermissionDenied = !lockEntered && Boolean(navigator.locks?.request) && error instanceof DOMException && error.name === "SecurityError";
+          coordinationDenied ||= nativePermissionDenied;
+          if (!createNew || !nativePermissionDenied) throw error;
           recoveryAttempted = true;
           await api<Context>("/api/session", {});
           // A POST response is not evidence that the browser accepted its cookie.
