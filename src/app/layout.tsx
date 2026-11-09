@@ -4,12 +4,23 @@ import branding from "../../branding.json";
 import { Header, Footer } from "@/components/monterey/chrome";
 import { SessionProvider } from "@/components/monterey/session-provider";
 import "./globals.css";
+// Constructor: server-rendered website settings
+import constructorWebsiteSettings from "../../public/constructor-settings.json";
+type constructorWebsiteSettingsMetadataValue<T> = Omit<NonNullable<T>, 'title' | 'description'> & { title: string; description: string };
+function constructorWebsiteSettingsMetadata<T extends object | null | undefined>(value: PromiseLike<T>): Promise<constructorWebsiteSettingsMetadataValue<T>>;
+function constructorWebsiteSettingsMetadata<T extends object | null | undefined>(value: T): constructorWebsiteSettingsMetadataValue<T>;
+function constructorWebsiteSettingsMetadata(value: object | null | undefined | PromiseLike<object>): object | Promise<object> {
+  if (value && 'then' in value && typeof value.then === 'function') return Promise.resolve(value).then(original => constructorWebsiteSettingsMetadata(original));
+  return { ...value, title: constructorWebsiteSettings.title, description: constructorWebsiteSettings.description };
+}
 
-export const metadata: Metadata = {
+
+
+export const metadata: Metadata = constructorWebsiteSettingsMetadata(({
   title: "Taquería Monterey — Menú de ejemplo",
   description: "Demo ficticia de Esteban para probar Constructor. Explora ocho productos de ejemplo y guarda tu comanda. Sin cobros, preparación ni envío.",
   icons: { icon: "/brand-mark.svg", apple: "/brand-mark.svg" },
-};
+}));
 const localFontHashes = new Set([
   "b56db40c26850f83ba2ebffa1f7faa01e5ee4e55ac63decee1433de520a38483",
   "e1b454f5469f3d0d98c117651a4d15a8345ad77b50f09540b5cf61e82511b563",
@@ -27,7 +38,7 @@ const fontCss = branding.brandbook.fontFaces.map(face => {
 export default function RootLayout({ children }: { children: ReactNode }) {
   const apiOrigin = (process.env.NEXT_PUBLIC_CONSTRUCTOR_API || "https://constructor-api-git-dev-useconstructor.vercel.app").replace(/\/$/, "");
   const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || "P-8XX57R";
-  return <html lang="es" style={{
+  return <html lang={constructorWebsiteSettings.language} style={{
     "--brand-background": branding.backgroundColor,
     "--brand-surface": branding.secondaryColor,
     "--brand-primary": branding.primaryColor,
@@ -42,6 +53,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <SessionProvider><Header />{children}<Footer /></SessionProvider>
       <script src={"https://constructor-api-git-dev-useconstructor.vercel.app/v1/projects/P-8XX57R/analytics/script.js"} defer></script>
       <script src="/constructor-editor.js" defer />
-    <script src="/constructor-brand-identity.js" defer></script></body>
+    <script src="/constructor-brand-identity.js" defer></script><script src="/constructor-settings.js" defer></script></body>
   </html>;
 }
