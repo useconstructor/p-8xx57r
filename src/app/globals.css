@@ -520,3 +520,53 @@ button[data-slot="button"]:not(:disabled):active,.button-link:active { box-shado
   *,*::before,*::after { scroll-behavior:auto!important; transition-duration:0s!important; animation-duration:0s!important; animation-delay:0s!important; }
   .navigation-sheet[data-slot="sheet-content"] { transition:none; --tw-translate-x:0px!important; --tw-translate-y:0px!important; transform:none!important; }
 }
+
+/* __branding-overrides-start__ */
+@font-face { font-family:"Bricolage Grotesque"; src:url("https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/b56db40c26850f83ba2ebffa1f7faa01e5ee4e55ac63decee1433de520a38483.ttf"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:"Bricolage Grotesque"; src:url("https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/e1b454f5469f3d0d98c117651a4d15a8345ad77b50f09540b5cf61e82511b563.ttf"); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:"Bricolage Grotesque"; src:url("https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/284891c74c258cff7233962e048d9470bfb9fc326b53dd0bca408789297c3409.ttf"); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:"Bricolage Grotesque"; src:url("https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/913ee3631949ee1b4fb2601269412fca5775eb994d4f87be2c366c94ac123dc5.ttf"); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:"Atkinson Hyperlegible"; src:url("https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/daa4fc7275d21266748afad0563d8f57e075933686ca6995f06ed8619e99e9e4.ttf"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:"Atkinson Hyperlegible"; src:url("https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/b5d9490cf95d925a28ab7b1560e76385134c9bca6cd2d83eee1e51d8c7b1295f.ttf"); font-weight:700; font-style:normal; font-display:swap; }
+:root {
+  --brand-background: #FFFFFF !important;
+  --brand-surface: #FFD447 !important;
+  --brand-primary: #C6372D !important;
+  --brand-accent: #236646 !important;
+  --brand-text: #302044 !important;
+  --brand-font-heading: "Bricolage Grotesque", sans-serif !important;
+  --brand-font-body: "Atkinson Hyperlegible", sans-serif !important;
+  --color-background: oklch(1.0000 0.0000 89.88);
+  --color-foreground: oklch(0.2817 0.0665 302.89);
+  --color-primary-foreground: oklch(0.2817 0.0665 302.89);
+  --color-secondary-foreground: oklch(0.2817 0.0665 302.89);
+  --color-muted-foreground: oklch(0.2817 0.0665 302.89);
+  --color-accent-foreground: oklch(0.2817 0.0665 302.89);
+  --color-popover-foreground: oklch(0.2817 0.0665 302.89);
+  --color-card-foreground: oklch(0.2817 0.0665 302.89);
+  --primary-foreground: oklch(0.2817 0.0665 302.89);
+  --secondary-foreground: oklch(0.2817 0.0665 302.89);
+  --muted-foreground: oklch(0.2817 0.0665 302.89);
+  --accent-foreground: oklch(0.2817 0.0665 302.89);
+  --popover-foreground: oklch(0.2817 0.0665 302.89);
+  --brand-radius: 0.75rem !important;
+  --radius-sm: 0.75rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 0.75rem;
+  --background: oklch(1.0000 0.0000 89.88);
+  --card: oklch(1.0000 0.0000 89.88);
+  --popover: oklch(1.0000 0.0000 89.88);
+  --foreground: oklch(0.2817 0.0665 302.89);
+  --card-foreground: oklch(0.2817 0.0665 302.89);
+  --primary: oklch(0.5519 0.1815 28.51);
+  --accent: oklch(0.4585 0.0859 159.21);
+  --radius: 0.75rem;
+}
+h1, h2, h3, h4, h5, h6 { font-family: var(--brand-font-heading) !important; }
+body {
+  background: #FFFFFF !important;
+  color: #302044 !important;
+  font-family: var(--brand-font-body) !important;
+}
+/* __branding-overrides-end__ */
