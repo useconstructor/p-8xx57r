@@ -1,0 +1,984 @@
+{
+  "tone": "playful",
+  "fontBody": "Atkinson Hyperlegible",
+  "logoText": "Taquería Monterey",
+  "brandbook": {
+    "motif": "Media tortilla geométrica original: arco semicircular y borde recto. Su lógica conecta el cartel maíz con una franja uva de lado a lado y después con el borde de trabajo de la comanda, sin adornos que tapen productos ni controles.",
+    "pages": [
+      {
+        "id": "brand-page-1",
+        "title": "Brand guidelines",
+        "layout": "cover",
+        "summary": "Propuesta de identidad original para la demo ficticia de Esteban en Constructor.",
+        "examples": [
+          {
+            "text": "Identidad visual · Menú y pedido de ejemplo",
+            "title": "Taquería Monterey"
+          },
+          {
+            "text": "Place the name above the subtitle. Leave 48 px around the composition; keep the mark separate from the lettering.",
+            "title": "Cover composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-2",
+        "title": "The Brand",
+        "layout": "divider",
+        "summary": "Use a Tomate divider with white type to introduce the identity. Express joy through scale, clear shapes and direct language—not decorative clutter.",
+        "examples": [
+          {
+            "text": "Explora el menú y arma un pedido de ejemplo.",
+            "title": "Tacos a la vista"
+          },
+          {
+            "text": "Use one large headline, one short line and generous open space. Do not introduce product grids on section dividers.",
+            "title": "Divider rhythm"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-3",
+        "title": "Welcome",
+        "layout": "content",
+        "summary": "A completed public search did not identify a matching brand identity. This guide presents an original identity proposed for this project.",
+        "examples": [
+          {
+            "text": "Explora tacos y bebidas de ejemplo. No se realizará ningún cobro, preparación ni envío.",
+            "title": "Demo ficticia de Esteban para probar Constructor"
+          },
+          {
+            "text": "Use the exact name Taquería Monterey. The experience contains only the menu at / and the example order at /pedido.",
+            "title": "Scope"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-4",
+        "title": "Index",
+        "layout": "content",
+        "summary": "Organize the guide into five numbered ranges. Keep navigation labels short and align page numbers to a shared edge.",
+        "examples": [
+          {
+            "text": "01–04 Introduction · 05–08 Definition and voice · 09–15 Logo system",
+            "title": "01–15 · Identity"
+          },
+          {
+            "text": "16–22 Typography and layouts · 23–25 Color · 26–29 Graphics and image direction",
+            "title": "16–29 · Visual language"
+          },
+          {
+            "text": "30–47 Design studies · 48 In-app recovery · 49 Colophon",
+            "title": "30–49 · Applications"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-5",
+        "title": "Defining",
+        "layout": "content",
+        "summary": "Define the identity around a visible product becoming a saved order line. Repeat the tortilla arc and straight working edge instead of adding unrelated restaurant imagery.",
+        "examples": [
+          {
+            "text": "Elige un producto y añádelo a tu pedido de ejemplo.",
+            "title": "Del menú a tu comanda"
+          },
+          {
+            "text": "The Maíz product poster ends in an Uva band. The order continues that straight edge beside its total and action.",
+            "title": "Visual connection"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-6",
+        "title": "Vision & Mission",
+        "layout": "content",
+        "summary": "Treat this chapter as project intent, not a restaurant’s corporate claims. Keep the interface focused on exploring eight examples and saving a private, editable demo order.",
+        "examples": [
+          {
+            "text": "Seis tacos y dos bebidas para probar un pedido de ejemplo.",
+            "title": "Explora. Elige. Guarda."
+          },
+          {
+            "text": "Describe the demo task. Do not add claims about tradition, ingredient quality, delivery speed or a real restaurant’s ambitions.",
+            "title": "Editorial boundary"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-7",
+        "title": "Brand Values",
+        "layout": "content",
+        "summary": "Use clarity, visible continuity and honest feedback as design principles. These guide the demo’s expression; they are not claims about a commercial business.",
+        "examples": [
+          {
+            "text": "“Cantidad de Pastor” names the field directly. “Quitar” removes a line explicitly.",
+            "title": "Clarity"
+          },
+          {
+            "text": "Keep Pastor’s illustration and name unchanged from menu selection to the saved order.",
+            "title": "Continuity"
+          },
+          {
+            "text": "Use “Guardando…” while waiting. Show “Pedido de ejemplo guardado” only after the server confirms the save.",
+            "title": "Honesty"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-8",
+        "title": "Tone of Voice",
+        "layout": "content",
+        "summary": "Write interface copy in clear Spanish with short verbs and sentence case. Be cheerful in discovery and calm in recovery; avoid jokes around errors or persistence.",
+        "examples": [
+          {
+            "text": "“Elige tu taco” and “Añadir y ver pedido” name the next action without suggesting payment.",
+            "title": "Discovery"
+          },
+          {
+            "text": "“No pudimos guardar el cambio. Conservamos tu edición.” Follow with “Reintentar”.",
+            "title": "Recovery"
+          },
+          {
+            "text": "Do not use “Compra ahora”, “Te lo llevamos” or “El mejor taco de la ciudad”.",
+            "title": "Avoid"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-9",
+        "title": "Logo",
+        "layout": "divider",
+        "summary": "Introduce the logo on Maíz with Uva typography. Keep the semicircular mark whole and the business name in real type, never embedded as SVG lettering.",
+        "examples": [
+          {
+            "text": "Una media tortilla. Una comanda clara.",
+            "title": "Taquería Monterey"
+          },
+          {
+            "text": "Show one primary composition at generous scale. Keep construction notes outside its clear space.",
+            "title": "Logo study"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-10",
+        "title": "Logo overview",
+        "layout": "logo",
+        "summary": "Pair the original geometric half tortilla with a two-line name. Its arc presents the product; its straight base echoes the order’s working edge.",
+        "examples": [
+          {
+            "text": "Set “Taquería” above “Monterey”; make Monterey dominant while preserving both words and the accent.",
+            "title": "Name structure"
+          },
+          {
+            "text": "Use the same complete SVG for the brandmark and icon exports. Never redraw its fillings for individual applications.",
+            "title": "Shared geometry"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-11",
+        "title": "Primary logo",
+        "layout": "logo",
+        "summary": "Align the mark’s base with the two-line word block. Use compact, readable spacing and a 16 px minimum gap between symbol and name at header scale.",
+        "examples": [
+          {
+            "text": "Uva lettering on Maíz; the full-color mark sits on a white support surface.",
+            "title": "Primary composition"
+          },
+          {
+            "text": "White lettering on Uva; retain the same full-color SVG on white rather than recoloring or reversing its shapes.",
+            "title": "Reverse composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-12",
+        "title": "Logo Safezone",
+        "layout": "logo",
+        "summary": "Let x equal one quarter of the visible symbol width. Reserve at least x around the complete lockup; the white support surface must also contain the whole SVG canvas.",
+        "examples": [
+          {
+            "text": "At a 64 px visible symbol width, leave at least 16 px around the lockup before navigation or borders.",
+            "title": "Header study"
+          },
+          {
+            "text": "If the full name becomes hard to read, use the mark alone for an icon. Do not compress the two-line lettering.",
+            "title": "Compact placement"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-13",
+        "title": "Color combinations",
+        "layout": "colors",
+        "summary": "Keep the symbol’s palette fixed. Change the surrounding surface and wordmark color, using a white support surface to preserve its complete silhouette on colored fields.",
+        "examples": [
+          {
+            "text": "Maíz #FFD447 background, Uva #302044 name, original symbol supported by Blanco #FFFFFF.",
+            "title": "Maíz poster"
+          },
+          {
+            "text": "Uva #302044 background and white name. Keep the symbol’s white support clear of the page edge.",
+            "title": "Uva cover"
+          },
+          {
+            "text": "Use Uva lettering on Blanco. Reserve Tomate for the main action, not an extra logo variant.",
+            "title": "White interface"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-14",
+        "title": "Brandmark",
+        "layout": "logo",
+        "summary": "The mark combines a clean semicircle, straight base and three geometric filling shapes. Preserve its proportions, internal colors and full 160 × 160 canvas.",
+        "examples": [
+          {
+            "text": "The Uva outer arc and flat base remain intact at every size. Do not crop the tortilla into a decorative corner.",
+            "title": "Recognizable silhouette"
+          },
+          {
+            "text": "Pastor’s product illustration may share the flat geometry, but it must remain distinct from the single identity mark.",
+            "title": "Relationship to products"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-15",
+        "title": "Logo misuse",
+        "layout": "logo",
+        "summary": "Never stretch, rotate, crop, outline or add effects to the logo. Keep the name exact and avoid restaurant badges, invented founding dates and ornamental frames.",
+        "examples": [
+          {
+            "text": "Do not replace Taquería Monterey with “Monterrey”, remove the accent or use a shortened name as the main signature.",
+            "title": "Incorrect naming"
+          },
+          {
+            "text": "No shadows, gradients, cream plaques or curved lettering around the tortilla.",
+            "title": "Incorrect treatment"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-16",
+        "title": "Typography",
+        "layout": "divider",
+        "summary": "Introduce type with one expressive Bricolage Grotesque heading and quiet Atkinson Hyperlegible support. Use scale and spacing—not extra font families—to create energy.",
+        "examples": [
+          {
+            "text": "Explora seis tacos y dos bebidas de ejemplo.",
+            "title": "Elige tu taco"
+          },
+          {
+            "text": "Set the headline at 64 px on wide pages, with a short 16 px supporting line and 24 px separation.",
+            "title": "Divider setting"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-17",
+        "title": "Typography overview",
+        "layout": "type",
+        "summary": "Bricolage Grotesque carries the name and headings; Atkinson Hyperlegible carries reading, prices and controls. Real files for both families are supplied.",
+        "examples": [
+          {
+            "text": "Revisa productos, cantidades y total antes de confirmar.",
+            "title": "Tu comanda, clara"
+          },
+          {
+            "text": "Keep Bricolage out of quantity inputs. Use Atkinson for labels, errors and monetary values so controls remain easy to scan.",
+            "title": "Family roles"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-18",
+        "title": "Primary typeface",
+        "layout": "type",
+        "summary": "Use Bricolage Grotesque for the brand and short headlines at 36–64 px. Keep natural Spanish capitalization and compact spacing without closing counters or accents.",
+        "examples": [
+          {
+            "text": "Selecciona un producto para verlo en el cartel.",
+            "title": "Tacos a la vista"
+          },
+          {
+            "text": "“Taquería” sits above the larger “Monterey”. Keep the accent visible and never replace the lettering with drawn paths.",
+            "title": "Wordmark setting"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-19",
+        "title": "Typography",
+        "layout": "type",
+        "summary": "Use Bricolage 700 for headings and Atkinson 400/700 for body and emphasis. The wordmark targets 800; no 800 file is supplied, so use an explicit 700 fallback, never synthetic bold.",
+        "examples": [
+          {
+            "text": "Cambia las cantidades o añade más productos antes de confirmar.",
+            "title": "Mi pedido"
+          },
+          {
+            "text": "Use upright styles. Set actions and totals in Atkinson 700; keep explanations in 400. Do not use italics or all caps to signal errors.",
+            "title": "Weight and style"
+          },
+          {
+            "text": "The current study uses genuine Bricolage 700. Adopt 800 only with a genuine matching font file; do not label 700 as 800.",
+            "title": "Wordmark fallback"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-20",
+        "title": "Supporting type",
+        "layout": "type",
+        "summary": "Use Atkinson Hyperlegible at 16 px or larger for body and inputs, 14 px for buttons and 12 px only for secondary notes. Give every label enough room to remain complete.",
+        "examples": [
+          {
+            "text": "Escribe un número entero del 1 al 20.",
+            "title": "Cantidad de Pastor"
+          },
+          {
+            "text": "Keep price, unit and error text upright. Never shrink a quantity field or its validation message to fit a narrow column.",
+            "title": "Readable details"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-21",
+        "title": "Hierarchy",
+        "layout": "type",
+        "summary": "Use one page heading, clear category headings and quieter product details. Keep total and main action adjacent; do not compete with them through oversized secondary labels.",
+        "examples": [
+          {
+            "text": "Tacos · Pastor · $24.00 MXN",
+            "title": "Menú de ejemplo"
+          },
+          {
+            "text": "Use 64 px for the poster heading, 28 px for category headings, 20 px for product names and 16 px for details.",
+            "title": "Desktop scale"
+          },
+          {
+            "text": "Reduce the main heading to 36 px. Keep inputs at 16 px and actions at least 44 px tall.",
+            "title": "Mobile scale"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-22",
+        "title": "Layouts",
+        "layout": "applications",
+        "summary": "Use the sequence header → Maíz poster → Uva action band → grouped menu → shared-edge order. Space with 4/8/12/16/24/32/48 px increments; never overlay fields or illustrations.",
+        "examples": [
+          {
+            "text": "Elige productos del menú y revisa tu comanda.",
+            "title": "Arma tu pedido de ejemplo"
+          },
+          {
+            "text": "Place chosen lines left and total/action along their right edge. At 768 px, move the shared edge below a full-width order.",
+            "title": "Wide order"
+          },
+          {
+            "text": "Budget about 52 px for navigation, 64 for title, 136 for scene, 72 for action and 104 for the first controls. Let remaining content flow.",
+            "title": "390 × 640 composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-23",
+        "title": "Colors",
+        "layout": "divider",
+        "summary": "Use five exact colors to separate presentation, reading and action. Keep Blanco as the canvas; do not introduce cream backgrounds or additional decorative hues.",
+        "examples": [
+          {
+            "text": "Maíz presents the active taco. Uva anchors its name and price. Tomate identifies the next action.",
+            "title": "Bright, not busy"
+          },
+          {
+            "text": "Return to white for search, filters and order lines so the product poster stays distinctive.",
+            "title": "Color rhythm"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-24",
+        "title": "Colors overview",
+        "layout": "colors",
+        "summary": "Map each semantic role to one exact palette value. Use Uva for primary reading and Cilantro for secondary text on white; on Maíz, secondary text also uses Uva.",
+        "examples": [
+          {
+            "text": "Blanco · background · #FFFFFF. Maíz · surface · #FFD447. Use Maíz for the product poster, not every input.",
+            "title": "Canvas and surface"
+          },
+          {
+            "text": "Tomate · accent · #C6372D. Uva · text · #302044. Cilantro · muted · #236646.",
+            "title": "Action and reading"
+          },
+          {
+            "text": "Use white labels on Tomate buttons. Target 4.5:1 for normal text and 3:1 for control boundaries; never communicate state through hue alone.",
+            "title": "Accessible pairing"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-25",
+        "title": "Using Tints",
+        "layout": "colors",
+        "summary": "Keep identity fills solid and exact. Create quieter areas through white space and thinner borders, not new pastel tokens, faded text or translucent brandmarks.",
+        "examples": [
+          {
+            "text": "Use a white row, Uva text and a fine Uva divider rather than a pale Maíz fill.",
+            "title": "Quiet order line"
+          },
+          {
+            "text": "Keep “Guardando…” readable on its solid button. Explain the pending state in text rather than fading the whole order.",
+            "title": "Pending action"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-26",
+        "title": "Graphic Elements",
+        "layout": "divider",
+        "summary": "Build graphics from the tortilla arc and a straight shared edge. Keep contours intact and reserve the 8 px, 160 ms alignment movement for a successfully saved addition.",
+        "examples": [
+          {
+            "text": "The Uva lower band meets both sides of the Maíz poster. Keep product name, price and action inside a clear inset.",
+            "title": "Poster edge"
+          },
+          {
+            "text": "After saving Pastor, align its reference toward the order by 8 px. With reduced motion, show the aligned state immediately and announce the addition.",
+            "title": "Saved addition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-27",
+        "title": "Icons",
+        "layout": "content",
+        "summary": "Use simple interface icons with consistent stroke weight and visible labels where meaning is not obvious. Keep every touch target at least 44 px and separate icons from the brandmark.",
+        "examples": [
+          {
+            "text": "Use minus and plus beside “Cantidad de Pastor”. Give them accessible names: “Reducir Pastor” and “Aumentar Pastor”.",
+            "title": "Quantity controls"
+          },
+          {
+            "text": "Pair the removal icon with “Quitar”. Reducing quantity from 1 must not act as removal.",
+            "title": "Removal"
+          },
+          {
+            "text": "A magnifier supports the visible label “Buscar productos”; it does not replace that label.",
+            "title": "Search"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-28",
+        "title": "Product illustrations",
+        "layout": "applications",
+        "summary": "Replace photography with eight complete conceptual SVG illustrations. Use Uva contours, exact palette fills and shared safe margins; never imply real portions or add unlisted ingredients.",
+        "examples": [
+          {
+            "text": "Differentiate Pastor pieces, Asada strips, Pollo strands, Carnitas fragments, Champiñones slices and Nopales segments inside complete tortillas.",
+            "title": "Six distinct tacos"
+          },
+          {
+            "text": "Show Agua de jamaica in Tomate and Agua de horchata in Blanco, both with Uva glass outlines and readable names.",
+            "title": "Two complete drinks"
+          },
+          {
+            "text": "Keep each product’s canonical v1 artwork unchanged in saved lines. If it fails, retain its frame and name with “Ilustración no disponible”.",
+            "title": "Asset continuity"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-29",
+        "title": "Moodboard",
+        "layout": "applications",
+        "summary": "Choose the product poster connected to the order as the governing composition. Compare arrangements through scale, edges and control clarity rather than borrowed restaurant imagery.",
+        "examples": [
+          {
+            "text": "A complete taco sits in a Maíz field above an Uva band; the same selected product becomes a real order line.",
+            "title": "Chosen direction"
+          },
+          {
+            "text": "An illustrated tablecloth crowds controls. An order-first opening lacks introduction. Split heroes and repeated sales cards weaken recognition.",
+            "title": "Discarded directions"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-30",
+        "title": "Applications",
+        "layout": "divider",
+        "summary": "The following design studies translate the identity across screens and presentation objects. Keep the menu-to-order story central; do not imply new routes or commercial services.",
+        "examples": [
+          {
+            "text": "Explora productos ilustrados y guarda un pedido de ejemplo.",
+            "title": "Del cartel a la comanda"
+          },
+          {
+            "text": "Use the original mark, real typography and exact palette. Keep physical objects presentation-only, without sales or fulfillment claims.",
+            "title": "Application rule"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-31",
+        "title": "Social media icons",
+        "layout": "logo",
+        "summary": "Design study: center the complete mark on white within the avatar crop. Keep enough margin for circular masks; omit the wordmark at small avatar sizes.",
+        "examples": [
+          {
+            "text": "Demo ficticia de Esteban para probar Constructor.",
+            "title": "Taquería Monterey"
+          },
+          {
+            "text": "Place the full 160 × 160 SVG canvas inside the circular safe area. Do not enlarge until the tortilla base touches the crop.",
+            "title": "Avatar geometry"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-32",
+        "title": "Social media profiles",
+        "layout": "applications",
+        "summary": "Design study: pair the mark avatar with the exact name and a brief demo description. Do not fabricate handles, followers, restaurant hours or contact details.",
+        "examples": [
+          {
+            "text": "Tacos ilustrados y pedidos de ejemplo. Una demo ficticia de Esteban para probar Constructor.",
+            "title": "Taquería Monterey"
+          },
+          {
+            "text": "Show name first, description second and a Maíz/Uva banner last. Do not imitate a verified account badge.",
+            "title": "Profile hierarchy"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-33",
+        "title": "Instagram posts",
+        "layout": "applications",
+        "summary": "Design study: use one complete product illustration per post, a top-left headline and a full-width Uva footer. Avoid promotional badges, urgency and invented availability.",
+        "examples": [
+          {
+            "text": "Pastor · $24.00 MXN · Producto de ejemplo",
+            "title": "Hoy miramos Pastor"
+          },
+          {
+            "text": "Explora el menú de ejemplo de Taquería Monterey.",
+            "title": "Seis tacos, dos bebidas"
+          },
+          {
+            "text": "Keep captions outside the tortilla silhouette and reserve 32 px between headline, artwork and footer.",
+            "title": "Post spacing"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-34",
+        "title": "Posters",
+        "layout": "applications",
+        "summary": "Design study: extend the app’s Maíz product poster into a single-product composition. Make the title, intact illustration and Uva information band read in that order.",
+        "examples": [
+          {
+            "text": "Champiñones · $25.00 MXN · Menú de ejemplo",
+            "title": "Un taco en primer plano"
+          },
+          {
+            "text": "Include the demo note in the footer. Do not add a street address, booking prompt, opening date or delivery claim.",
+            "title": "Poster boundary"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-35",
+        "title": "T shirts and totes",
+        "layout": "applications",
+        "summary": "Design study: use the original mark and a compact two-line name on a white garment or tote. Keep these as identity objects, without merchandise prices or purchase controls.",
+        "examples": [
+          {
+            "text": "Taquería Monterey · Demo de Esteban",
+            "title": "Tacos a la vista"
+          },
+          {
+            "text": "Use one front composition with generous clear space. Do not wrap the mark around seams or repeat it as a dense pattern.",
+            "title": "Placement"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-36",
+        "title": "Takeaway packaging",
+        "layout": "applications",
+        "summary": "Design study: demonstrate the shared-edge graphic on a presentation sleeve, not operational food packaging. Keep the mark whole and avoid portion, material or food-safety claims.",
+        "examples": [
+          {
+            "text": "Taquería Monterey · Sin preparación ni envío",
+            "title": "Una comanda de ejemplo"
+          },
+          {
+            "text": "Use a white face, Maíz product panel and Uva lower strip. Keep folds and joins outside the mark’s safe zone.",
+            "title": "Sleeve composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-37",
+        "title": "Demo entry point",
+        "layout": "applications",
+        "summary": "Design study: replace pickup wayfinding with a presentation entry panel. Direct attention to the menu, never to an invented counter, address or collection service.",
+        "examples": [
+          {
+            "text": "Explora tacos y bebidas de ejemplo en Taquería Monterey.",
+            "title": "Empieza por el menú"
+          },
+          {
+            "text": "Place the brand above “Ver menú”. Any linked study points to /; do not create a pickup page or imply a physical location.",
+            "title": "Entry panel"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-38",
+        "title": "Ordering controls",
+        "layout": "applications",
+        "summary": "Design study: adapt installed shadcn controls with 12 px corners, 44 px targets and visible focus. Keep selection separate from addition; reflect saved values only after server approval.",
+        "examples": [
+          {
+            "text": "Guarda este producto en tu comanda y después abre Mi pedido.",
+            "title": "Añadir y ver pedido"
+          },
+          {
+            "text": "Elige un entero del 1 al 20. Quitar elimina la línea; reducir desde 1 no la elimina.",
+            "title": "Cantidad de Pastor"
+          },
+          {
+            "text": "Confirmation remains activatable with local errors and focuses the first invalid field. During a pending operation, show “Guardando…” and block concurrent confirmation.",
+            "title": "Validation and pending"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-39",
+        "title": "Order receipt",
+        "layout": "applications",
+        "summary": "Design study: transform the same order into a saved record, without duplicating a receipt. Freeze its lines and place status, server date and total on the shared edge after the save.",
+        "examples": [
+          {
+            "text": "2 × Pastor · $48.00 MXN\n1 × Agua de horchata · $25.00 MXN\nTotal · $73.00 MXN",
+            "title": "Pedido de ejemplo guardado"
+          },
+          {
+            "text": "No se realizará ningún cobro, preparación ni envío.",
+            "title": "Sin cobro ni envío"
+          },
+          {
+            "text": "Replace quantity controls with frozen values. Use only the saved date and total; place “Empezar otro pedido” after the confirmed order.",
+            "title": "Saved-record hierarchy"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-40",
+        "title": "Saved-order card",
+        "layout": "applications",
+        "summary": "Design study: replace rewards graphics with compact confirmed-order entries. Each entry opens within /pedido; do not introduce points, stamps, membership or benefits.",
+        "examples": [
+          {
+            "text": "Abre un pedido de ejemplo confirmado en esta sesión.",
+            "title": "Pedidos guardados"
+          },
+          {
+            "text": "Consulta sus productos, cantidades y total guardados.",
+            "title": "Abrir"
+          },
+          {
+            "text": "Use a white row, Uva title and fine divider. Include the stored date and total only; never create a rewards balance.",
+            "title": "Card treatment"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-41",
+        "title": "Demo sign",
+        "layout": "applications",
+        "summary": "Design study: use a presentation sign rather than a restaurant storefront claim. Set the name at large scale on Uva and support the original symbol with white.",
+        "examples": [
+          {
+            "text": "Menú ilustrado · Pedido de ejemplo",
+            "title": "Taquería Monterey"
+          },
+          {
+            "text": "Keep the two-line name dominant and the demo description subordinate. Exclude opening hours, location details and directional arrows to a venue.",
+            "title": "Sign composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-42",
+        "title": "Ordering website",
+        "layout": "applications",
+        "summary": "Design study: limit navigation to / and /pedido. Keep the database-backed menu public through GET /api/menu; present private order actions separately from browsing.",
+        "examples": [
+          {
+            "text": "Todo · Tacos · Bebidas",
+            "title": "Buscar productos"
+          },
+          {
+            "text": "Abre tu comanda existente sin añadir productos. Añadir productos muestra el catálogo en una región secundaria.",
+            "title": "Mi pedido"
+          },
+          {
+            "text": "Keep the public product reference when moving between pages. Default to Pastor only when absent; an unknown reference shows recovery without a substitute.",
+            "title": "Selection continuity"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-43",
+        "title": "Favicon",
+        "layout": "logo",
+        "summary": "Design study: derive favicon and app icon from the same original SVG geometry. Keep its white support and full silhouette; never substitute a letter, emoji or template icon.",
+        "examples": [
+          {
+            "text": "Explora tacos y bebidas ilustrados.",
+            "title": "Taquería Monterey — Menú de ejemplo"
+          },
+          {
+            "text": "Center the complete mark on white. Keep the Uva base and arc visible; do not add the business name inside the icon.",
+            "title": "Small-size treatment"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-44",
+        "title": "Stationery",
+        "layout": "applications",
+        "summary": "Design study: use stationery for presenting the demo, not issuing commercial documents. Place the small lockup top left and a single Uva working edge along the footer.",
+        "examples": [
+          {
+            "text": "Taquería Monterey · Menú y pedido de ejemplo",
+            "title": "Notas de la demo"
+          },
+          {
+            "text": "Use white paper, 48 px margins and Atkinson body text. Leave out tax details, addresses, invoice numbering and invented contact information.",
+            "title": "Page structure"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-45",
+        "title": "Demo introduction cards",
+        "layout": "applications",
+        "summary": "Design study: replace business contact cards with compact project introductions. Use the front for the name and the reverse for the demo’s two-page purpose.",
+        "examples": [
+          {
+            "text": "Una demo ficticia de Esteban para explorar un menú y guardar un pedido de ejemplo.",
+            "title": "Conoce Taquería Monterey"
+          },
+          {
+            "text": "Front: Uva name on Maíz with the supported mark. Reverse: white field and short description; no invented job title, phone or email.",
+            "title": "Two-sided hierarchy"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-46",
+        "title": "Demo invitation card",
+        "layout": "applications",
+        "summary": "Design study: replace a gift card with a non-monetary invitation to explore. Keep the composition playful but omit balances, voucher codes, redemption and purchase language.",
+        "examples": [
+          {
+            "text": "Explora el menú y guarda un pedido de ejemplo. No se realizará ningún cobro.",
+            "title": "Prueba una comanda"
+          },
+          {
+            "text": "Use a Maíz front, Uva headline and the tortilla mark on white. Keep any navigation directed to /, not a new redemption route.",
+            "title": "Invitation layout"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-47",
+        "title": "Presentation seal",
+        "layout": "applications",
+        "summary": "Design study: use a seal-shaped label as a presentation graphic, never as a food-quality or security certification. Keep the original mark on white with a simple Uva perimeter.",
+        "examples": [
+          {
+            "text": "Taquería Monterey · Pedido de ejemplo",
+            "title": "Demo de Esteban"
+          },
+          {
+            "text": "Keep text outside the mark’s safe zone and upright. Do not add “garantizado”, “auténtico”, quality stars or tamper-evident claims.",
+            "title": "Seal composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-48",
+        "title": "In-app recovery",
+        "layout": "applications",
+        "summary": "Design study: place recovery beside the affected action, not in a separate support module. Preserve entries and distinguish failure, conflict, unknown confirmation and unavailable private access.",
+        "examples": [
+          {
+            "text": "No sabemos si se guardó. Recupera el resultado del mismo envío antes de iniciar otro.",
+            "title": "Confirmación desconocida"
+          },
+          {
+            "text": "Compara tu edición con los valores guardados antes de decidir. Total mostrado: último total válido.",
+            "title": "Tu pedido cambió en otra vista"
+          },
+          {
+            "text": "Puedes seguir viendo el menú. Una sesión nueva no recupera pedidos anteriores. Si el acceso incrustado está bloqueado, abre el acceso directo.",
+            "title": "No podemos acceder a tu sesión"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-49",
+        "title": "Thank you",
+        "layout": "cover",
+        "summary": "A completed public search did not identify a matching brand identity. This guide presents an original identity proposed for this project.",
+        "examples": [
+          {
+            "text": "Vuelve al menú o empieza otro pedido de ejemplo sin borrar los confirmados de esta sesión.",
+            "title": "Gracias por probar la demo"
+          },
+          {
+            "text": "Preserve the exact name, original tortilla SVG, five palette values and Spanish interface copy. Keep new applications within the menu-and-order scope.",
+            "title": "Identity handoff"
+          },
+          {
+            "text": "Supplied files: Bricolage Grotesque 400/500/600/700 and Atkinson Hyperlegible 400/700. This guide uses 700 as the stated fallback for the 800 wordmark target.",
+            "title": "Type provenance"
+          }
+        ]
+      }
+    ],
+    "voice": "Español claro, alegre y directo. Acciones concretas: Añadir, Mi pedido y Confirmar pedido de ejemplo. Una nota breve identifica la demo; los estados de guardado son honestos, sin promesas comerciales ni lenguaje técnico innecesario.",
+    "colors": [
+      {
+        "hex": "#FFFFFF",
+        "name": "Blanco",
+        "role": "background"
+      },
+      {
+        "hex": "#FFD447",
+        "name": "Maíz",
+        "role": "surface"
+      },
+      {
+        "hex": "#C6372D",
+        "name": "Tomate",
+        "role": "accent"
+      },
+      {
+        "hex": "#302044",
+        "name": "Uva",
+        "role": "text"
+      },
+      {
+        "hex": "#236646",
+        "name": "Cilantro",
+        "role": "muted"
+      }
+    ],
+    "origin": "proposed",
+    "markSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path fill=\"#302044\" d=\"M16 112A64 64 0 0 1 144 112Z\"/><path fill=\"#FFD447\" d=\"M25 104A55 55 0 0 1 135 104Z\"/><path fill=\"#C6372D\" d=\"M48 82L62 70L74 84L60 96Z\"/><path fill=\"#236646\" d=\"M86 69L99 75L91 93L78 87Z\"/><path fill=\"#C6372D\" d=\"M108 87L118 93L112 101L102 95Z\"/></svg>",
+    "sources": [
+      "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;500;600;700&display=swap"
+    ],
+    "version": 1,
+    "fontFaces": [
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/b56db40c26850f83ba2ebffa1f7faa01e5ee4e55ac63decee1433de520a38483.ttf",
+        "family": "Bricolage Grotesque",
+        "sha256": "b56db40c26850f83ba2ebffa1f7faa01e5ee4e55ac63decee1433de520a38483",
+        "weight": "400",
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvRviyM0.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ]
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/e1b454f5469f3d0d98c117651a4d15a8345ad77b50f09540b5cf61e82511b563.ttf",
+        "family": "Bricolage Grotesque",
+        "sha256": "e1b454f5469f3d0d98c117651a4d15a8345ad77b50f09540b5cf61e82511b563",
+        "weight": "500",
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvSniyM0.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ]
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/284891c74c258cff7233962e048d9470bfb9fc326b53dd0bca408789297c3409.ttf",
+        "family": "Bricolage Grotesque",
+        "sha256": "284891c74c258cff7233962e048d9470bfb9fc326b53dd0bca408789297c3409",
+        "weight": "600",
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvcXlyM0.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ]
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/913ee3631949ee1b4fb2601269412fca5775eb994d4f87be2c366c94ac123dc5.ttf",
+        "family": "Bricolage Grotesque",
+        "sha256": "913ee3631949ee1b4fb2601269412fca5775eb994d4f87be2c366c94ac123dc5",
+        "weight": "700",
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvfzlyM0.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ]
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/daa4fc7275d21266748afad0563d8f57e075933686ca6995f06ed8619e99e9e4.ttf",
+        "family": "Atkinson Hyperlegible",
+        "sha256": "daa4fc7275d21266748afad0563d8f57e075933686ca6995f06ed8619e99e9e4",
+        "weight": "400",
+        "originalUrl": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45GE5Q.ttf",
+        "availableWeights": [
+          "400",
+          "700"
+        ]
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-8XX57R/brand/fonts/b5d9490cf95d925a28ab7b1560e76385134c9bca6cd2d83eee1e51d8c7b1295f.ttf",
+        "family": "Atkinson Hyperlegible",
+        "sha256": "b5d9490cf95d925a28ab7b1560e76385134c9bca6cd2d83eee1e51d8c7b1295f",
+        "weight": "700",
+        "originalUrl": "https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8WbcNcw.ttf",
+        "availableWeights": [
+          "400",
+          "700"
+        ]
+      }
+    ],
+    "positioning": "Propuesta de identidad original para la demo ficticia de Esteban en Constructor. Un menú breve de tacos y bebidas permite explorar productos ilustrados y guardar pedidos de ejemplo, sin representar un restaurante operativo.",
+    "researchStatus": "not_found",
+    "tokenSemanticsVersion": 1
+  },
+  "textColor": "#302044",
+  "accentColor": "#C6372D",
+  "fontHeading": "Bricolage Grotesque",
+  "borderRadius": "0.75rem",
+  "logoImageUrl": null,
+  "primaryColor": "#C6372D",
+  "secondaryColor": "#FFD447",
+  "backgroundColor": "#FFFFFF"
+}
