@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "positions": {
+    "sesiones": {
+      "x": 80,
+      "y": 80
+    },
+    "operaciones_idempotentes": {
+      "x": 680,
+      "y": 80
+    },
+    "carritos": {
+      "x": 80,
+      "y": 680
+    },
+    "carrito_lineas": {
+      "x": 680,
+      "y": 680
+    },
+    "pedidos": {
+      "x": 80,
+      "y": 1280
+    },
+    "pedido_lineas": {
+      "x": 680,
+      "y": 1280
+    },
+    "productos": {
+      "x": 80,
+      "y": 1880
+    },
+    "marcador_semilla": {
+      "x": 680,
+      "y": 1880
+    }
+  }
+}
