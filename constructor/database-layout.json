@@ -6,7 +6,7 @@
       "y": 0
     },
     "carritos": {
-      "x": 600,
+      "x": 800,
       "y": 0
     },
     "marcador_semilla": {
@@ -14,7 +14,7 @@
       "y": 600
     },
     "operaciones_idempotentes": {
-      "x": 600,
+      "x": 800,
       "y": 600
     },
     "pedido_lineas": {
@@ -22,7 +22,7 @@
       "y": 1200
     },
     "pedidos": {
-      "x": 600,
+      "x": 800,
       "y": 1200
     },
     "productos": {
@@ -30,7 +30,7 @@
       "y": 1800
     },
     "sesiones": {
-      "x": 600,
+      "x": 800,
       "y": 1800
     }
   }
